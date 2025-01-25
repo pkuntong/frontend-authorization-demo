@@ -17,6 +17,11 @@ const Login = () => {
     }));
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    handleLogin(data);
+  };
+
   return (
     <div className="login">
       <Logo title={"CryptoDucks"} />
